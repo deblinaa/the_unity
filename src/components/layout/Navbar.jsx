@@ -49,7 +49,9 @@ export function Navbar() {
           <Link to="/contact" className="text-xs font-semibold tracking-wide uppercase text-gray-500 hover:text-primary-black transition-colors">
             Contact
           </Link>
-          <Button variant="outline" className="px-6 py-2.5">Get Started</Button>
+          <Link to="/login">
+            <Button variant="outline" className="px-6 py-2.5">Get Started</Button>
+          </Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="p-2 text-primary-black">
@@ -86,7 +88,9 @@ export function Navbar() {
                 Contact
               </Link>
               <div className="pt-4 border-t border-gray-100">
-                <Button variant="outline" className="w-full">Get Started</Button>
+                <Link to="/login" onClick={() => setMobileMenuOpen(false)}>
+                  <Button variant="outline" className="w-full">Get Started</Button>
+                </Link>
               </div>
             </div>
           </motion.div>

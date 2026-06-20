@@ -25,3 +25,12 @@ task2.md
 *.njsproj
 *.sln
 *.sw?
+
+# User requested files
+rundb.md
+resources.md
+newrundb.txt
+dbs.md
+db.md
+.env.example
+.env
